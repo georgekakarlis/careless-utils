@@ -1,0 +1,40 @@
+{
+  "name": "@georgekakarlis/careless-utils",
+  "version": "1.0.1",
+  "description": "A mini package to take care of a lot of careless-utils that may arise ahead",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "author": "georgekakarlis https://github.com/georgekakarlis",
+  "license": "ISC",
+  "publishConfig": {
+    "@georgekakarlis/registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "repository": {
+    "url": "git://github.com/georgekakarlis/careless-utils.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "jest": "^29.4.3",
+    "ts-jest": "^29.0.5",
+    "typescript": "^4.9.5"
+  },
+  "bugs": {
+    "url": "https://github.com/georgekakarlis/careless-utils/issues"
+  },
+  "homepage": "https://github.com/georgekakarlis/careless-utils#readme",
+  "dependencies": {
+   
+  }
+}
