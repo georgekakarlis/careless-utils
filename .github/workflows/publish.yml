@@ -18,7 +18,7 @@ jobs:
       matrix:
         node-version: [14.x, 16.x, 18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-        os: [ubuntru-latest, windows-latest, macos-latest ]
+        os: [ubuntu-latest, windows-latest, macos-latest ]
 
     steps:
     - uses: actions/checkout@v3
@@ -28,4 +28,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
+    - run: npm run build
     - run: npm t
