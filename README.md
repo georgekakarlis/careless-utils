@@ -1,5 +1,5 @@
 
-# ts-utils
+# careless-utils
 
 
 A mini collection of small code chunks to help/ease the flow of development. It is build on top of Typescript. Tests behave as they should. 
@@ -13,7 +13,7 @@ Also, care to give me some tips to correct some parts of the code if you think t
 
 ## Installation
 
-Install ts-utils with npm
+Install careless-utils with npm
 
 ```bash
   npm install careless-utils
