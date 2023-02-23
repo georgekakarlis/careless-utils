@@ -30,3 +30,19 @@ jobs:
     - run: npm i
     - run: npm run build
     - run: npm t
+    
+  publish: 
+      runs-on: ubuntu-latest
+      if: ${{ github.ref == 'refs/heads/main' }}
+      needs: [quality]
+      steps: 
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+         node-version: ${{ matrix.node-version }}
+         cache: 'npm'
+      - run: npm i
+      - run: npm run semantic-release
+      - run: npm run build
+      - run: npm t
