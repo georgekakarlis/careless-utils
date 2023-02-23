@@ -23,7 +23,7 @@
     "access": "public"
   },
   "repository": {
-    "url": "git+https://github.com/georgekakarlis/careless-utils.git"
+    "url": "https://github.com/georgekakarlis/careless-utils.git"
   },
   "devDependencies": {
     "@types/jest": "^29.4.0",
