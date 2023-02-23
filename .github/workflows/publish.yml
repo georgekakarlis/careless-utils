@@ -40,10 +40,12 @@ jobs:
         with:
          node-version: ${{ matrix.node-version }}
          cache: 'npm'
+         env:
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+          GH_TOKEN: ${{secrets.GH_TOKEN}}
       - run: npm ci
       - run: npm run semantic-release
       - run: npm run build
       - run: npm t
-        env:
-          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
-          GH_TOKEN: ${{secrets.GH_TOKEN}}
+        
+        
