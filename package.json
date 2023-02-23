@@ -14,8 +14,7 @@
     "commit" : "git-cz",
     "test": "jest",
     "build": "tsc",
-    "semantic-release": "semantic-release --branches main",
-    "release": "semantic-release"
+    "semantic-release": "semantic-release --branches main"
   },
   "author": "georgekakarlis https://github.com/georgekakarlis",
   "license": "ISC",
@@ -24,7 +23,7 @@
     "access": "public"
   },
   "repository": {
-    "url": "https://github.com/georgekakarlis/careless-utils.git"
+    "url": "git+https://github.com/georgekakarlis/careless-utils.git"
   },
   "devDependencies": {
     "@types/jest": "^29.4.0",
