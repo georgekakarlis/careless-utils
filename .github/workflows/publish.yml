@@ -6,6 +6,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches:  "*" 
+    
+permissions: write-all
 
 jobs:
   quality:
