@@ -3,10 +3,10 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
   pull_request:
     branches:  "*" 
-    
+
 permissions: write-all
 
 jobs:
@@ -28,7 +28,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: npm run build
     - run: npm t
     
   publish: 
@@ -41,10 +40,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
          node-version: ${{ matrix.node-version }}
-         cache: 'npm'
       - run: npm ci
       - run: npm run semantic-release
-      - run: npm run build
       - run: npm t
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
