@@ -7,6 +7,6 @@ module.exports = {
     branches: ['main'],
     repositoryUrl: 'https://github.com/georgekakarlis/careless-utils',
     ci: false,
-    githubToken: process.env.GH_TOKEN,
+    githubToken: process.env.GITHUB_TOKEN,
   };
   
