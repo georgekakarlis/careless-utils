@@ -14,7 +14,7 @@
     "commit" : "git-cz",
     "test": "jest",
     "build": "tsc",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release --branches main"
   },
   "author": "georgekakarlis https://github.com/georgekakarlis",
   "license": "ISC",
