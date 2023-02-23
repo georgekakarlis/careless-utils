@@ -1,6 +1,6 @@
 {
-  "name": "@georgekakarlis/careless-utils",
-  "version": "0.0.0-development",
+  "name": "careless-utils",
+  "version": "1.0.1",
   "description": "A mini package to take care of a lot of careless-utils that may arise ahead",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,6 +10,7 @@
     "README.md",
     "package.json"
   ],
+  "type": "module",
   "scripts": {
     "commit" : "git-cz",
     "test": "jest",
@@ -23,7 +24,7 @@
     "access": "public"
   },
   "repository": {
-    "url": "git+https://github.com/georgekakarlis/careless-utils.git"
+    "url": "https://github.com/georgekakarlis/careless-utils.git"
   },
   "devDependencies": {
     "@types/jest": "^29.4.0",
